@@ -47,15 +47,15 @@ public class Lesson_5 {
                 "элементам циклам значения B(Black) или W(White)\n");
 
         String[][] massiveTwo = new String[8][8];
-
+        out.println("gh"+massiveTwo.length);
         for (int i = 0; i < massiveTwo.length; i++) {
             for (int j = 0; j < massiveTwo[i].length; j += 2) {
                 if (i == 0 || i % 2 == 0) {
                     massiveTwo[i][j] = "W";
                     massiveTwo[i][j + 1] = "B";
                 } else {
-                    massiveTwo[i][j] = "W";
-                    massiveTwo[i][j + 1] = "B";
+                    massiveTwo[i][j+1] = "W";
+                    massiveTwo[i][j] = "B";
                 }
             }
         }
